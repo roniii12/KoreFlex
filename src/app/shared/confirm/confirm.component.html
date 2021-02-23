@@ -1,0 +1,20 @@
+<div *ngIf="!isClosed" [@showComponent] class="confirm-alert">
+  <div class="confirm-container">
+    <div class="confirm-title">
+      <h2>{{title}}</h2>
+    </div>
+    <div class="hr"></div>
+    <div class="confirm-message">
+      {{message}}
+    </div>
+    <div class="hr"></div>
+    <div class="actions">
+      <button class="confirm-button" (click)="onActionClick(true)">
+        כן
+      </button>
+      <button class="cancel-button" (click)="onActionClick(false)">
+        לא
+      </button>
+    </div>
+  </div>
+</div>

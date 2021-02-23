@@ -1,0 +1,23 @@
+.sideBar-card{
+  color: black;
+  font-family: almoni-dl;
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEEEE;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.active{
+  background-color: #0277BD;
+  box-shadow: 1px 1px 3px 1px #212121;
+  border-color: transparent;
+  color: #E0E0E0;
+}

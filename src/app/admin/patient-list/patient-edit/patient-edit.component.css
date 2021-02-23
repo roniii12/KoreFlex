@@ -1,0 +1,11 @@
+.mat-form-field{
+  text-align: start;
+  width: 100%;
+}
+.mat-form-field.email{
+  direction: ltr;
+}
+.wrap-form{
+  width: 60%;
+  margin: auto;
+}

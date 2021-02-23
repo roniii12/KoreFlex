@@ -1,0 +1,16 @@
+<app-container>
+  <app-side-bar>
+    <app-side-bar-card [routerLink]="['therapists']" routerLinkActive="active" >
+      מטפלים
+    </app-side-bar-card>
+    <app-side-bar-card [routerLink]="['patients']" routerLinkActive="active">
+      מטופלים
+    </app-side-bar-card>
+    <app-side-bar-card [routerLink]="['rooms']" routerLinkActive="active">
+      חדרים
+    </app-side-bar-card>
+  </app-side-bar>
+  <div style="flex: 1;">
+    <router-outlet></router-outlet>
+  </div>
+</app-container>

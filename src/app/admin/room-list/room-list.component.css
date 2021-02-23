@@ -1,0 +1,44 @@
+.title-page{
+  width: 100%;
+  text-align: center;
+}
+.room-list{
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+.room-list tr{
+  border-bottom: 1px solid black;
+}
+.room-list tbody tr:last-child{
+  border: none;
+}
+.room-list td, .room-list th{
+  width: 50%;
+  padding: 10px 0;
+}
+.room-delete,.room-edit{
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  font-size: 1rem;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #616161;
+  cursor: pointer;
+  padding: 3px 8px;
+  transition: .1s box-shadow;
+}
+.room-delete:active,.room-edit:active{
+  box-shadow: 2px 2px 4px 1px #616161;
+}
+.room-delete{
+  background-color: #D50000;
+  color: #fff;
+}
+app-room-edit{
+  display: block;
+  width: 100%;
+  text-align: center;
+}

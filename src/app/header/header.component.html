@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="header-content">
+    <div class="logo" [routerLink]="['/']">
+      KoreFlex
+    </div>
+    <ul class="header-list-categories">
+      <li class="header-category" [routerLink]="['/patients']" routerLinkActive="header-active" >
+        <div>מטופלים</div>
+      </li>
+      <li class="header-category" [routerLink]="['/therapists']" routerLinkActive="header-active">
+        <div>מטפלים</div>
+      </li>
+      <li class="header-category" [routerLink]="['/rooms']" routerLinkActive="header-active">
+        <div>חדרים</div>
+      </li>
+      <li class="header-category" [routerLink]="['/admin']" routerLinkActive="header-active">
+        <div>ניהול</div>
+      </li>
+    </ul>
+  </div>
+  <div class="auth">
+    התחבר
+  </div>
+</header>

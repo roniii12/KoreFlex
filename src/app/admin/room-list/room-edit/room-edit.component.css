@@ -1,0 +1,22 @@
+mat-form-field{
+  text-align: start;
+}
+.roomName-field{
+  width: 200px;
+}
+.room-add{
+  outline: none;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+  background-color: #0277BD;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 5px;
+  box-shadow: 1px 1px 2px #9E9E9E;
+  cursor: pointer;
+  transition: .1s all;
+}
+.room-add:active{
+  box-shadow: 2px 2px 4px 1px #9E9E9E;
+}

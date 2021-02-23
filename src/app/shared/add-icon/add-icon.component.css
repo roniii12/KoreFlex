@@ -1,0 +1,22 @@
+.addIcon{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  transition: 1s all;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 1px darkgrey;
+}
+.addIcon:hover{
+  transform: rotate(180deg);
+}
+.addIcon svg{
+  transition: 1s all;
+}
+.addIcon:hover svg{
+  fill: #0D47A1;
+}
+

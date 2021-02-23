@@ -1,0 +1,56 @@
+<div class="wrap-form">
+  <div class="title-page">
+    <h2>יצירת מטפל חדש</h2>
+  </div>
+  <form [formGroup]="createTherapistForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="formControl">
+        <mat-form-field class="mat-form-field">
+          <mat-label>שם מלא</mat-label>
+          <input type="text" matInput formControlName="fullName"
+                 placeholder="הכנס שם מלא">
+          <mat-error *ngIf="createTherapistForm.controls.fullName.hasError('required')">
+            שם מלא זה <strong>חובה</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="formControl">
+        <mat-form-field class="mat-form-field email">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email"
+                 placeholder="Ex.pat@example.com">
+          <mat-error *ngIf="createTherapistForm.controls.email.hasError('email') && !createTherapistForm.controls.email.hasError('required')">
+            הכנס אימייל תקין
+          </mat-error>
+          <mat-error *ngIf="createTherapistForm.controls.email.hasError('required')">
+             <strong>חובה</strong> להכניס אימייל
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="formControl">
+        <mat-form-field class="mat-form-field">
+          <mat-label>שם משתמש</mat-label>
+          <input type="text" matInput formControlName="username"
+                 placeholder="הכנס שם משתמש">
+          <mat-hint>שם משתמש זה ישמש לכניסה לחשבון</mat-hint>
+          <mat-error *ngIf="createTherapistForm.controls.username.hasError('required')">
+            <strong>חובה</strong> להזין שם משתמש
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="formControl">
+        <mat-form-field class="mat-form-field">
+          <mat-label>סיסמא</mat-label>
+          <input type="password" matInput formControlName="password"
+                 placeholder="הכנס סיסמא">
+          <mat-error *ngIf="createTherapistForm.controls.password.hasError('pattern') && !createTherapistForm.controls.password.hasError('required')">
+            סיסמא חייבת להכיל 8 אותיות, לפחות אות גדולה ואות קטנה באנגלית ומספר.
+          </mat-error>
+          <mat-error *ngIf="createTherapistForm.controls.password.hasError('required')">
+            להזין סיסמא <strong>חובה</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>

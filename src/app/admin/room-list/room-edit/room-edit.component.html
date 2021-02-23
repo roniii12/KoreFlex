@@ -1,0 +1,10 @@
+<mat-form-field class="roomName-field">
+  <mat-label>שם החדר</mat-label>
+  <input matInput placeholder="הכנס את שם החדר שברצונך להוסיף" [(ngModel)]="roomName">
+  <button mat-button *ngIf="roomName" matSuffix mat-icon-button aria-label="Clear" (click)="roomName=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+<button class="room-add" (click)="onAddRoom()">
+  הוסף חדר
+</button>
