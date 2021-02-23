@@ -11,10 +11,16 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { PatientEffects } from './patients/store/patient.effects';
 import { TherapistEffects } from './therapists/store/therapist.effects';
 import { RoomEffects } from './rooms/store/room.effects';
+import { HeaderComponent } from './header/header.component';
+import { DatePipe } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,9 +29,10 @@ import { RoomEffects } from './rooms/store/room.effects';
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot(),
-    EffectsModule.forFeature()
+    EffectsModule.forFeature(),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

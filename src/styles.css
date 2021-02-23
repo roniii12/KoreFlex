@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+  --widthInput:180px;
+  --heightInput: 56px;
+  --fieldRadius:4px;
+  --borderColorInput: #dadce0;
+}
+html{
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+body{
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: almoni-dl;
+}
+
+@font-face{
+  font-family:almoni-dl;
+  src:url("./assets/site/fonts/Rubik-Regular.ttf");
+  font-style:normal;
+  font-weight:400
+}
+@font-face{
+  font-family:almoni-dl;
+  src:url("./assets/site/fonts/Rubik-Medium.ttf");
+  font-style:normal;
+  font-weight:700
+}
+@font-face{
+  font-family:almoni-dl;
+  src:url("./assets/site/fonts/Rubik-Bold.ttf");
+  font-style:normal;
+  font-weight:900
+}
+app-side-bar-card{
+  outline: none;
+}
+app-side-bar-card.active .sideBar-card{
+  background-color: #0277BD;
+  box-shadow: 1px 1px 3px 1px #212121;
+  border-color: transparent;
+  color: #E0E0E0;
+}
+.table-shadow{
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+.table-shadow tr{
+  border-bottom: 1px solid #BDBDBD;
+}
+.table-shadow td{
+  padding: 7px;
+}
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+.button-shadow{
+  outline: none;
+  border: none;
+  margin: 2px 3px;
+  font-size: 1em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #616161;
+  cursor: pointer;
+  padding: 3px 8px;
+  transition: .1s box-shadow;
+}
+.button-shadow:active{
+  box-shadow: 2px 2px 4px 1px #616161;
+}
+.line-break{
+  line-break: anywhere;
+}
+@media screen and (max-width:750px){
+  .table-shadow td{
+    padding: 10px 5px;
+  }
+  .button-shadow{
+    margin: 3px;
+  }
+}
+@media td and (max-width: 50px){
+  .button-shadow{
+    margin: 3px;
+  }
+}

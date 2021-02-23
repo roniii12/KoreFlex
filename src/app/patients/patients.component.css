@@ -1,0 +1,8 @@
+.wrap-patient-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.wrap-main-body{
+  width: 100%;
+}

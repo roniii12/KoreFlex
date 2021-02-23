@@ -1,0 +1,8 @@
+.patients-list{
+  width: 300px;
+  height: 100vh;
+  background-color: #424242;
+  opacity: 1;
+  padding: 10px;
+  box-shadow: -1px 1px 2px 0px #424242
+}

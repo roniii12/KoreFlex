@@ -1,0 +1,30 @@
+.schedule{
+  width: 100%;
+}
+
+
+.add-treatment{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color:#01579B;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+}
+mat-form-field{
+  text-align: start;
+}
+.Rangedate{
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}

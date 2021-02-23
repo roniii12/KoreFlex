@@ -5,13 +5,15 @@ import { RoomListComponent } from './room-list/room-list.component';
 import { RoomItemComponent } from './room-list/room-item/room-item.component';
 import { RoomDetailsComponent } from './room-details/room-details.component';
 import { RoomEditComponent } from './room-edit/room-edit.component';
+import { RoomsRoutingModule } from './therapists-routing.module';
 
 
 
 @NgModule({
   declarations: [RoomsComponent, RoomListComponent, RoomItemComponent, RoomDetailsComponent, RoomEditComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RoomsRoutingModule
   ]
 })
 export class RoomsModule { }
