@@ -1,0 +1,16 @@
+<tr>
+  <td class="room-table-col" contenteditable="false" #roomName>
+    סגל
+  </td>
+  <td class="room-table-action">
+    <button class="room-edit" (click)="onEdit()">
+      ערוך
+    </button>
+    <button class="room-delete" (click)="isAppearWarningDelete=true">
+      מחק
+    </button>
+  </td>
+</tr>
+<app-confirm (action)="onConfirmAction($event)" *ngIf="isAppearWarningDelete" [title]="'אזהרה'"
+  [message]="'האם בטוח שברצונך למחוק את החדר '+ '\'\''+ this.name+ '\'\''+ '? (אחרי המחיקה לא יהיה אפשרות להחזיר את החדר)'">
+</app-confirm>
