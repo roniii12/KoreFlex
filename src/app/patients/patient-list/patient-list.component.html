@@ -6,8 +6,8 @@
 
 </div> -->
 <app-side-bar>
-  <app-patient-item></app-patient-item>
-  <app-patient-item></app-patient-item>
-  <app-patient-item></app-patient-item>
-  <app-patient-item></app-patient-item>
+  <div *ngFor="let patient of patients">
+    <app-patient-item
+    [patientName]="patient"></app-patient-item>
+  </div>
 </app-side-bar>

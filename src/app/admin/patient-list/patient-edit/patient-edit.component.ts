@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -13,13 +13,20 @@ export class PatientEditComponent implements OnInit {
   createPatientForm:FormGroup;
   fullName:FormControl;
   email:FormControl;
+  @Output() close = new EventEmitter<void>();
 
 
   ngOnInit(): void {
     this.initForm();
   }
 
-  onSubmit(){}
+  onSubmit(){
+    
+  }
+
+  onClose(){
+    this.close.emit();
+  }
 
   private initForm(){
     let patFullName = "";

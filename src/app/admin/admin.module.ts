@@ -16,6 +16,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PatientItemComponent } from './patient-list/patient-item/patient-item.component';
+import { RoomItemComponent } from './room-list/room-item/room-item.component';
 
 
 
@@ -30,6 +32,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RoomEditComponent,
     AdminListComponent,
     AdminEditComponent,
+    PatientItemComponent,
+    RoomItemComponent,
   ],
   imports: [
     CommonModule,

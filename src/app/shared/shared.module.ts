@@ -17,7 +17,8 @@ import { AddIconComponent } from './add-icon/add-icon.component';
   SideBarCardComponent,
   ContainerComponent,
   ConfirmComponent,
-  AddIconComponent],
+  AddIconComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,

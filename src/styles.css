@@ -77,6 +77,34 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
 .line-break{
   line-break: anywhere;
 }
+.wrap-modal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 45.5%, 0.4);
+}
+.modal-container {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%),
+    0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+.mat-horizontal-stepper-header .mat-step-icon{
+  margin-right: 0 !important;
+  margin-left: 8px !important;
+}
 @media screen and (max-width:750px){
   .table-shadow td{
     padding: 10px 5px;

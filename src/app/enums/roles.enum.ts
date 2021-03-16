@@ -1,5 +1,5 @@
 export enum Roles {
-  admin,
-  therapist,
-  patient
+  admin="admin",
+  therapist="therapist",
+  patient="patient"
 }

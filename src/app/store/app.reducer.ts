@@ -12,7 +12,7 @@ export interface AppState {
 }
 
 export const appReducer: ActionReducerMap<AppState> = {
-  patients: fromPatients.patientReducer,
-  rooms: fromRooms.roomReducer,
-  therapists: fromTherapists.therapistReducer
+  patients: fromPatients.PatientReducer,
+  rooms: fromRooms.RoomReducer,
+  therapists: fromTherapists.TherapistReducer
 }

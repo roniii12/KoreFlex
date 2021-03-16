@@ -10,7 +10,7 @@ export const initialState: State = {
 };
 
 
-export const roomReducer = createReducer(
+export const RoomReducer = createReducer(
   initialState,
 
 );

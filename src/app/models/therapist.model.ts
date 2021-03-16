@@ -1,6 +1,7 @@
 export interface Therapist{
   id: string;
-  name: string;
+  FullName: string;
   ip: string;
-  email: string;
+  email?: string;
+  type: string;
 }

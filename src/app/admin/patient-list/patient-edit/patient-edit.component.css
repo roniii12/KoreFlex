@@ -1,11 +1,38 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
 .mat-form-field{
   text-align: start;
   width: 100%;
 }
-.mat-form-field.email{
+.mat-form-field.email {
   direction: ltr;
+  text-align: end;
 }
 .wrap-form{
   width: 60%;
   margin: auto;
+}
+.sbmBtn{
+  background: #0277BD;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  align-self: flex-end;
+  margin: 0;
+  margin-top: 5px;
+}
+.closeIcon{
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+mat-icon{
+  font-size: inherit;
+  width: 1.3rem;
 }

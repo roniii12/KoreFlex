@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -9,6 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class TherapistEditComponent implements OnInit {
 
   constructor() { }
+  @Output() close = new EventEmitter<void>();
 
   createTherapistForm:FormGroup;
 
@@ -17,8 +18,13 @@ export class TherapistEditComponent implements OnInit {
     this.initForm();
   }
 
-  onSubmit(){}
+  onSubmit(){
 
+  }
+
+  onClose(){
+    this.close.emit();
+  }
   private initForm(){
     let therFullName = "";
     let therEmail = "";
